@@ -1,2 +1,21 @@
-model,mae
-DummyRegressor (median),15.0897
+model,metric,value
+DummyRegressor (median),MAE,26.2867
+DummyClassifier (stratified),F1,0.4474
+DummyRegressor (median),R2,-0.1706
+ElasticNet,MAE,26.2725
+ElasticNet,R2,-0.1685
+GradientBoostingRegressor,MAE,26.4734
+GradientBoostingRegressor,R2,-0.1701
+RandomForestRegressor,MAE,26.5501
+RandomForestRegressor,R2,-0.1706
+KNeighborsClassifier,F1,0.4
+LogisticRegression,F1,0.3939
+CatBoostClassifier,F1,0.3944
+CatBoostRegressor,MAE,26.6649
+CatBoostRegressor,R2,-0.1742
+Hybrid (LogisticRegression + DummyRegressor),MAE,2.3066
+Hybrid (LogisticRegression + DummyRegressor),MSE,12.0592
+Hybrid (LogisticRegression + DummyRegressor),R2,-0.263
+"DummyRegressor (median, filtered test)",MAE,1.9193
+"DummyRegressor (median, filtered test)",MSE,13.232
+"DummyRegressor (median, filtered test)",R2,-0.3858
